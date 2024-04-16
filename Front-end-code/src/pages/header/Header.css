@@ -1,0 +1,28 @@
+.navlinks {
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out; /* Adding transition effect to color */
+  }
+  
+  .navlinks::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0; /* Initial width set to 0 */
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out; /* Adding transition effect to width */
+  }
+  
+  .navlinks:hover {
+    /* Change to the desired hover color */
+  }
+  
+  .navlinks:hover::after {
+    width: 100%; /* Changing width on hover */
+  }
+  
